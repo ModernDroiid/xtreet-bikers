@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xtreet Bikers — Taller de motos en Bosa, Bogotá</title>
+  <meta name="description" content="Taller de reparación y mantenimiento de motocicletas en Bosa, Bogotá. Diagnóstico con equipos avanzados para motos de bajo, medio y alto cilindraje.">
+  <meta name="theme-color" content="#0e1014">
+
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio" aria-label="Xtreet Bikers, inicio">
+        <img class="brand__logo" src="assets/img/logo.webp" alt="" width="400" height="194">
+        <span class="brand__name">Xtreet <span class="text-accent">Bikers</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#ubicacion">Horario y ubicación</a>
+        <a class="btn btn--primary btn--sm" href="https://wa.me/573503317134" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+          WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="status-pill"><span class="status-pill__dot" aria-hidden="true"></span>Abierto lunes a sábado · 8:00 a. m. – 7:00 p. m.</p>
+          <h1 class="display">Tu moto en manos de <span class="text-accent">expertos</span></h1>
+          <p class="hero__lead">Taller de reparación y mantenimiento de motocicletas en Bosa, Bogotá. Diagnóstico con equipos avanzados para motos de bajo, medio y alto cilindraje.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://wa.me/573503317134" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+              Agenda por WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Carrera+87+%2351-17+Sur%2C+Bosa%2C+Bogot%C3%A1" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+              Cómo llegar
+            </a>
+          </div>
+          <p class="hero__meta">Carrera 87 # 51-17 Sur · Bosa Betania · <a href="tel:+573503317134">+57 350 331 7134</a></p>
+        </div>
+
+        <!-- TEMPORAL: foto de stock (Unsplash). Reemplazar por foto real del taller (Instagram) -->
+        <div class="media hero__media">
+          <img src="assets/img/hero.webp" alt="Mecánico ajustando el motor de una moto" width="1200" height="1067" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <!-- Cilindraje -->
+    <section class="band" aria-labelledby="band-title">
+      <div class="container band__inner">
+        <h2 class="band__title" id="band-title">Atendemos todo cilindraje</h2>
+        <ul class="chips">
+          <li class="chip">Bajo CC</li>
+          <li class="chip">Medio CC</li>
+          <li class="chip">Alto CC</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section" id="servicios" aria-labelledby="servicios-title">
+      <div class="container">
+        <p class="eyebrow">Servicios</p>
+        <h2 class="heading" id="servicios-title">Lo que hacemos por tu moto</h2>
+
+        <div class="cards">
+          <article class="card">
+            <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-monitor"/></svg></span>
+            <h3 class="card__title">Diagnóstico con equipo</h3>
+            <p class="card__text">Revisamos tu moto con equipos avanzados para encontrar la falla exacta antes de tocar nada.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-gear"/></svg></span>
+            <h3 class="card__title">Reparación de motor</h3>
+            <p class="card__text">Desarme, reparación y armado de motor y caja. [AJUSTAR DETALLE CON EL TALLER]</p>
+          </article>
+          <article class="card">
+            <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg></span>
+            <h3 class="card__title">Mantenimiento</h3>
+            <p class="card__text">Mantenimiento preventivo y correctivo para que tu moto rinda y no te deje tirado. [AJUSTAR DETALLE CON EL TALLER]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trabajos -->
+    <section class="section section--alt" id="trabajos" aria-labelledby="trabajos-title">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">Trabajos</p>
+            <h2 class="heading" id="trabajos-title">Así trabajamos</h2>
+          </div>
+          <!-- TODO: URL real de Instagram -->
+          <a class="link" href="#" target="_blank" rel="noopener">Ver más en Instagram →</a>
+        </div>
+
+        <!-- TEMPORAL: fotos de stock (Unsplash). Reemplazar por fotos reales del taller (Instagram) -->
+        <ul class="gallery">
+          <li class="media"><img src="assets/img/trabajo-1.webp" alt="Motor de moto desarmado en reparación" width="720" height="900" loading="lazy" decoding="async"></li>
+          <li class="media"><img src="assets/img/trabajo-2.webp" alt="Moto deportiva lista en el taller" width="720" height="900" loading="lazy" decoding="async"></li>
+          <li class="media"><img src="assets/img/trabajo-3.webp" alt="Cadena y piñón de la rueda trasera" width="720" height="900" loading="lazy" decoding="async"></li>
+          <li class="media"><img src="assets/img/trabajo-4.webp" alt="Pared de herramientas del taller" width="720" height="900" loading="lazy" decoding="async"></li>
+          <li class="media"><img src="assets/img/trabajo-5.webp" alt="Multímetro midiendo la batería de una moto" width="720" height="900" loading="lazy" decoding="async"></li>
+          <li class="media"><img src="assets/img/trabajo-6.webp" alt="Moto en reparación dentro del taller" width="720" height="900" loading="lazy" decoding="async"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Horario y ubicación -->
+    <section class="section" id="ubicacion" aria-labelledby="ubicacion-title">
+      <div class="container">
+        <div class="visit">
+          <div>
+            <p class="eyebrow">Visítanos</p>
+            <h2 class="heading" id="ubicacion-title">Horario y ubicación</h2>
+
+            <ul class="info-list">
+              <li class="info-list__item">
+                <svg class="icon text-accent" aria-hidden="true"><use href="#i-pin"/></svg>
+                <div>
+                  <p class="info-list__main">Carrera 87 # 51-17 Sur</p>
+                  <p class="info-list__sub">Barrio Bosa Betania, Bosa · Bogotá</p>
+                </div>
+              </li>
+              <li class="info-list__item">
+                <svg class="icon text-accent" aria-hidden="true"><use href="#i-clock"/></svg>
+                <dl class="hours">
+                  <div class="hours__row"><dt>Lunes a sábado</dt><dd><strong>8:00 a. m. – 7:00 p. m.</strong></dd></div>
+                  <div class="hours__row"><dt>Domingo</dt><dd>Cerrado</dd></div>
+                </dl>
+              </li>
+              <li class="info-list__item">
+                <svg class="icon text-accent" aria-hidden="true"><use href="#i-chat"/></svg>
+                <div>
+                  <p class="info-list__main"><a href="tel:+573503317134">+57 350 331 7134</a></p>
+                  <p class="info-list__sub">Teléfono y WhatsApp</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <iframe class="map"
+            title="Mapa: Carrera 87 # 51-17 Sur, Bosa, Bogotá"
+            src="https://www.google.com/maps?q=Carrera%2087%20%2351-17%20Sur%2C%20Bosa%2C%20Bogot%C3%A1&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta">
+          <div>
+            <h2 class="cta__title">¿Tu moto está fallando?</h2>
+            <p class="cta__text">Escríbenos, cuéntanos qué le pasa y te decimos cuándo traerla.</p>
+          </div>
+          <a class="btn btn--primary" href="https://wa.me/573503317134" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+            Escribir por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__about">
+          <a class="brand" href="#inicio" aria-label="Xtreet Bikers, inicio">
+            <img class="brand__logo" src="assets/img/logo.webp" alt="" width="400" height="194" loading="lazy">
+            <span class="brand__name">Xtreet <span class="text-accent">Bikers</span></span>
+          </a>
+          <p>Taller de reparación y mantenimiento de motocicletas. Diagnóstico con equipos avanzados para motos de bajo, medio y alto cilindraje.</p>
+          <p class="site-footer__location">
+            <svg class="icon text-accent" aria-hidden="true"><use href="#i-pin"/></svg>
+            Carrera 87 # 51-17 Sur, Bosa · Bogotá
+          </p>
+        </div>
+
+        <div>
+          <h2 class="eyebrow site-footer__title">Servicios</h2>
+          <ul class="site-footer__list">
+            <li><a href="#servicios">Diagnóstico con equipo</a></li>
+            <li><a href="#servicios">Reparación de motor</a></li>
+            <li><a href="#servicios">Mantenimiento</a></li>
+            <li><a href="#servicios">Bajo, medio y alto CC</a></li>
+          </ul>
+        </div>
+
+        <nav aria-labelledby="footer-explora">
+          <h2 class="eyebrow site-footer__title" id="footer-explora">Explora</h2>
+          <ul class="site-footer__list">
+            <li><a href="#trabajos">Trabajos</a></li>
+            <li><a href="#ubicacion">Horario y ubicación</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Carrera+87+%2351-17+Sur%2C+Bosa%2C+Bogot%C3%A1" target="_blank" rel="noopener">Cómo llegar</a></li>
+            <li><a href="https://wa.me/573503317134" target="_blank" rel="noopener">Contáctanos</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>© <span id="year">2026</span> Xtreet Bikers. Todos los derechos reservados.</p>
+        <!-- TODO: URLs reales de redes -->
+        <nav class="site-footer__social" aria-label="Redes sociales">
+          <a class="link" href="#" target="_blank" rel="noopener">Facebook</a>
+          <a class="link" href="#" target="_blank" rel="noopener">Instagram</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Iconos (sprite SVG, trazos estilo Lucide) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M6 12l3-3 3 3 5-5"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+  </svg>
+</body>
+</html>

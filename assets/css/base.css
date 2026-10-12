@@ -1,0 +1,120 @@
+/* ==========================================================================
+   Base: design tokens, reset, typography, utilities
+   ========================================================================== */
+
+:root {
+  /* Colors */
+  --color-bg: #0e1014;
+  --color-bg-alt: #111419;
+  --color-surface: #161a20;
+  --color-border: #262b33;
+  --color-text: #f2f4f7;
+  --color-text-muted: #a3aab5;
+  --color-accent: #3b8bff;
+  --color-accent-hover: #2f78e6;
+  --color-on-accent: #0b0d10;
+  --color-success: #2fd27a;
+
+  /* Typography */
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Layout */
+  --container: 1200px;
+  --gutter: 1rem;
+  --radius: 10px;
+  --radius-pill: 999px;
+  --header-h: 72px;
+}
+
+@media (min-width: 768px) {
+  :root { --gutter: 2rem; }
+}
+
+/* Reset */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+* { margin: 0; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-h);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg,
+iframe { display: block; max-width: 100%; }
+
+ul { list-style: none; padding: 0; }
+
+a { color: inherit; text-decoration: none; }
+
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Typography */
+.display,
+.heading {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+}
+
+.display { font-size: clamp(3rem, 8vw, 5.5rem); }
+
+.heading { font-size: clamp(2.25rem, 5vw, 3.25rem); }
+
+.eyebrow {
+  margin-bottom: 0.5rem;
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Utilities */
+.container {
+  width: 100%;
+  max-width: calc(var(--container) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.text-accent { color: var(--color-accent); }
+
+.skip-link {
+  position: absolute;
+  left: var(--gutter);
+  top: -100px;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  border-radius: var(--radius);
+}
+
+.skip-link:focus { top: 1rem; }
